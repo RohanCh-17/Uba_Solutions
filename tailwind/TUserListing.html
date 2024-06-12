@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User Listing</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 flex items-center justify-center h-screen">
+    <div class="bg-white p-6 rounded-lg shadow-lg w-full max-w-4xl">
+        <h1 class="text-2xl font-bold mb-6 text-center">User Listing</h1>
+        <table class="min-w-full bg-white border-collapse block md:table">
+            <thead class="block md:table-header-group">
+                <tr class="border border-grey-500 md:border-none block md:table-row absolute -top-full md:top-auto -left-full md:left-auto md:relative">
+                    <th class="bg-gray-200 p-2 text-left block md:table-cell">Username</th>
+                    <th class="bg-gray-200 p-2 text-left block md:table-cell">Email</th>
+                </tr>
+            </thead>
+            <tbody class="block md:table-row-group">
+                <tr class="border border-grey-500 md:border-none block md:table-row">
+                    <td class="p-2 text-left block md:table-cell">user1</td>
+                    <td class="p-2 text-left block md:table-cell">user1@example.com</td>
+                </tr>
+                <tr class="border border-grey-500 md:border-none block md:table-row">
+                    <td class="p-2 text-left block md:table-cell">user2</td>
+                    <td class="p-2 text-left block md:table-cell">user2@example.com</td>
+                </tr>
+                <!-- Add more users as needed -->
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

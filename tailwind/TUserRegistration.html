@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User Registration</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="validation.js"></script>
+</head>
+<body class="bg-gray-100 flex items-center justify-center h-screen">
+    <div class="bg-white p-6 rounded-lg shadow-lg w-full max-w-md">
+        <h1 class="text-2xl font-bold mb-6 text-center">User Registration</h1>
+        <form action="register_process.php" method="post" onsubmit="return validateRegistrationForm()">
+            <div class="mb-4">
+                <label for="username" class=" text-gray-700">Username:</label>
+                <input type="text" id="username" name="username" class="w-full px-3 py-2 border rounded-lg" >
+            </div>
+            <div class="mb-4">
+                <label for="email" class=" text-gray-700">Email:</label>
+                <input type="email" id="email" name="email" class="w-full px-3 py-2 border rounded-lg" required>
+            </div>
+            <div class="mb-4">
+                <label for="password" class=" text-gray-700">Password:</label>
+                <input type="password" id="password" name="password" class="w-full px-3 py-2 border rounded-lg" required>
+            </div>
+            <button type="submit" class="w-full bg-green-500 text-white py-2 rounded-lg hover:bg-green-600">Register</button>
+        </form>
+    </div>
+</body>
+</html>
